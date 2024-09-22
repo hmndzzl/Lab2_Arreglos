@@ -46,5 +46,10 @@ public class Contenedor {
 		this.destino = destino;
 	}
 
+    //Methods
+    public String infoContenedor(){ //Obtener la información del contenedor
+        return "ID: " + identificador + ", Producto: " + producto + ", Peso: " + peso + "kg, Destino: " + destino;
+    }
+
 }
 
