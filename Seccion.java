@@ -65,12 +65,12 @@ public class Seccion {
         return false;
     }
 
-    public String listarContenedores() {
+    public String listarContenedores() { //Listar Contenedores
         StringBuilder lista = new StringBuilder();
-        for (Contenedor[] fila : contenedores) {
-            for (Contenedor cont : fila) {
+        for (Contenedor[] fila : contenedores) { //Filas 
+            for (Contenedor cont : fila) { //Columnas
                 if (cont != null) {
-                    lista.append(cont.toString()).append("\n");
+                    lista.append(cont.infoContenedor()).append("\n"); //Agregar contenedor a la lista
                 }
             }
         }
